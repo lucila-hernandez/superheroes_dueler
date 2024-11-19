@@ -15,8 +15,7 @@ class Hero:
         self.kills = 0
 
     def fight(self, opponent):
-        ''' Current Hero will take turns fighting the opponent hero passed in.
-        '''
+        ''' Current Hero will take turns fighting the opponent hero passed in.'''
         if len(self.abilities) == 0 and len(opponent.abilities) == 0:
             print("Draw")
             return
@@ -78,8 +77,7 @@ class Hero:
         self.current_health -= damage_taken
 
     def is_alive(self):
-        '''Return True or False depending on whether the hero is alive or not.
-        '''
+        '''Return True or False depending on whether the hero is alive or not.'''
         return self.current_health > 0
     
     def add_weapon(self, weapon):
@@ -94,13 +92,6 @@ class Hero:
         '''Update deaths with num_deaths'''
         self.deaths += num_deaths
 
-
-        
-
-
-
-
-        
 if __name__ == "__main__":
     hero1 = Hero("Wonder Woman")
     hero2 = Hero("Dumbledore")
